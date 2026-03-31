@@ -1883,13 +1883,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/adapter-better-sqlite3@npm:^7.5.0":
-  version: 7.5.0
-  resolution: "@prisma/adapter-better-sqlite3@npm:7.5.0"
+"@prisma/adapter-better-sqlite3@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/adapter-better-sqlite3@npm:7.6.0"
   dependencies:
-    "@prisma/driver-adapter-utils": 7.5.0
+    "@prisma/driver-adapter-utils": 7.6.0
     better-sqlite3: ^12.6.0
-  checksum: 0acab4fecb4d04d81c644dd62c1037fc940a52e004d5036468b00bf6401a2513d9f28ebbe87506bdbdb122728fd2f6ab75bed3b3b6d80a4fc5310d43960e3a56
+  checksum: b132892e496319ffc33dfb9ae8824ba7033e9b298b87c1417f7479e605cb4618591106e1bee50b87cb954f33b2753bb8399a662547ab9e3a5761fb1a0ab66fda
   languageName: node
   linkType: hard
 
@@ -1996,6 +1996,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/debug@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/debug@npm:7.6.0"
+  checksum: 21123deb2c84d4f09586156eb8315db8c6b3c48f3340780354508c82005e3e9097a2514e87e1fe5c176be075daa13a503f3b43de2d867dc83181949abf3c8112
+  languageName: node
+  linkType: hard
+
 "@prisma/dev@npm:0.20.0":
   version: 0.20.0
   resolution: "@prisma/dev@npm:0.20.0"
@@ -2044,12 +2051,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/driver-adapter-utils@npm:7.5.0":
-  version: 7.5.0
-  resolution: "@prisma/driver-adapter-utils@npm:7.5.0"
+"@prisma/driver-adapter-utils@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/driver-adapter-utils@npm:7.6.0"
   dependencies:
-    "@prisma/debug": 7.5.0
-  checksum: e68895122d031abb5f91e7d5022e5ed0117d49507b004016d702e08b7e9b4d26ecea117c2f04787f4889a54797640ced888567992956bb0b2860513947f47f3e
+    "@prisma/debug": 7.6.0
+  checksum: fcf07b05cea669e3bc339a274b7ccf261850d12fa771076d6d06d959d58ac6798b08940f4cbbd202dd064802053e60707f5d7361685e112992675326145ca534
   languageName: node
   linkType: hard
 
@@ -4492,7 +4499,7 @@ __metadata:
     "@commitlint/config-conventional": 20.0.0
     "@dee-wan/schema-parser": ^1.4.0
     "@hono/node-server": ^1.19.11
-    "@prisma/adapter-better-sqlite3": ^7.5.0
+    "@prisma/adapter-better-sqlite3": ^7.6.0
     "@prisma/client": 7.5.0
     "@semantic-release/changelog": ^6.0.3
     "@semantic-release/git": ^10.0.1
@@ -9633,11 +9640,11 @@ __metadata:
 
 "typescript@patch:typescript@5.9.3#~builtin<compat/typescript>, typescript@patch:typescript@^5.9.3#~builtin<compat/typescript>":
   version: 5.9.3
-  resolution: "typescript@patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=1f5320"
+  resolution: "typescript@patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8bb8d86819ac86a498eada254cad7fb69c5f74778506c700c2a712daeaff21d3a6f51fd0d534fe16903cb010d1b74f89437a3d02d4d0ff5ca2ba9a4660de8497
+  checksum: a5a6dc399d3761ded54192031f11d3ad5df8001c7febe3fbbc8098efcb552cdf8f2f402b3618c56dafcd04fef63dee005f4900f608e185404caedc46480539ed
   languageName: node
   linkType: hard
 
