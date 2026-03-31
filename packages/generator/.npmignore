@@ -1,0 +1,7 @@
+node_modules
+yarn.lock
+yarn-error.log
+.pnpm-debug.log
+**/*.test.ts
+**/__tests__
+copy.js

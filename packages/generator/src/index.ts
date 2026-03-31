@@ -1,0 +1,95 @@
+import {
+  generatorHandler,
+  GeneratorOptions,
+  DMMF,
+} from '@prisma/generator-helper'
+import { generateUnifiedHandler } from './generators/generateUnifiedHandler'
+import { generateRouterFunction } from './generators/generateRouter'
+import { generateScalarUIHandler } from './generators/generateUnifiedScalarUI'
+import { generateUnifiedDocs } from './generators/generateUnifiedDocs'
+import { generateQueryBuilderHelper } from './generators/generateQueryBuilderHelper'
+import {
+  generateImportPrismaStatement,
+  getRelativeClientPath,
+} from './generators/generateImportPrismaStatement'
+import { writeFileSafely } from './utils/writeFileSafely'
+import { copyFiles } from './utils/copyFiles'
+import { GENERATOR_NAME } from './constants'
+
+generatorHandler({
+  onManifest() {
+    return {
+      version: require('../package.json').version,
+      defaultOutput: '../generated',
+      prettyName: GENERATOR_NAME,
+    }
+  },
+
+  async onGenerate(options: GeneratorOptions) {
+    const prismaImportStatement = generateImportPrismaStatement(options)
+
+    console.log('\n═══ Prisma Generator Hono ═══')
+
+    await copyFiles(options, {
+      includeCacheUtils: false,
+      includeValidatorUtils: false,
+    })
+
+    const modelNames: string[] = []
+
+    for (const model of options.dmmf.datamodel.models) {
+      modelNames.push(model.name)
+
+      const relativeClientPath = getRelativeClientPath(options, model.name)
+
+      await writeFileSafely({
+        content: generateUnifiedHandler({
+          model: model as DMMF.Model,
+          prismaImportStatement,
+        }),
+        options,
+        model: model as DMMF.Model,
+        operation: 'Handlers',
+      })
+
+      await writeFileSafely({
+        content: generateRouterFunction({
+          model: model as DMMF.Model,
+          enums: options.dmmf.datamodel.enums as DMMF.DatamodelEnum[],
+          relativeClientPath,
+        }),
+        options,
+        model: model as DMMF.Model,
+        operation: 'Router',
+      })
+
+      await writeFileSafely({
+        content: generateScalarUIHandler({
+          model: model as DMMF.Model,
+          enums: options.dmmf.datamodel.enums as DMMF.DatamodelEnum[],
+        }),
+        options,
+        model: model as DMMF.Model,
+        operation: 'Docs',
+      })
+    }
+
+    await writeFileSafely({
+      content: generateUnifiedDocs(modelNames),
+      options,
+      operation: 'combinedDocs',
+    })
+
+    await writeFileSafely({
+      content: generateQueryBuilderHelper(options),
+      options,
+      operation: 'queryBuilder',
+    })
+
+    console.log('\n═══ Generation Complete ═══')
+    console.log(`✓ ${options.dmmf.datamodel.models.length} models`)
+    console.log(`✓ OpenAPI documentation generated`)
+    console.log(`✓ Query builder helper generated`)
+    console.log('')
+  },
+})

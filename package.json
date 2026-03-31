@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@stryker-mutator/core": "^9.4.0",
+    "@stryker-mutator/vitest-runner": "^9.4.0",
+    "@types/node": "^24.7.2",
+    "@upstash/redis": "^1.35.8",
+    "@vitest/coverage-v8": "^4.0.14",
+    "husky": "9.1.7",
+    "prisma-mock": "^1.0.2",
+    "prisma-mock-vitest": "^0.1.6",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.14",
+    "vitest-mock-extended": "^3.1.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "stryker": "npx stryker run",
+    "run": "vitest run",
+    "demo": "yarn workspace prisma-generator-hono build && yarn workspace demo prisma:generate && yarn workspace demo dev"
+  },
+  "dependencies": {
+    "async-mutex": "^0.5.0",
+    "nanoid": "^5.1.6",
+    "pino": "^10.1.0"
+  }
+}
