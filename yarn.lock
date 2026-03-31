@@ -1999,17 +1999,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/dmmf@npm:6.17.1":
-  version: 6.17.1
-  resolution: "@prisma/dmmf@npm:6.17.1"
-  checksum: 885e87ef7a9ac73af970e65cf67e1a51973b3cf63b08c5f0863a8ea87dc8a2f408d172c5cfa976eb00d97bd9c85860ee4a6f4a4babc583eab098576566218fe2
-  languageName: node
-  linkType: hard
-
 "@prisma/dmmf@npm:6.19.2":
   version: 6.19.2
   resolution: "@prisma/dmmf@npm:6.19.2"
   checksum: 35a511be891ee53314df27dc69a6e820c2ab2d132f8cc6f7706e650b0bdfa3ca1ea13c77e4c77b1b2398135dfaf6c423c5a1a21fe509dffaf1fd67ba5b10f7dc
+  languageName: node
+  linkType: hard
+
+"@prisma/dmmf@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/dmmf@npm:7.6.0"
+  checksum: 9b24609f0e85129c0c066272f347abaddba49461916fbc5117e2b402dca2c7597329734b63d8e8eec1e687360d32ebf1884873622b22a5f6a8517af037cf350e
   languageName: node
   linkType: hard
 
@@ -2121,17 +2121,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/generator-helper@npm:6.17.1":
-  version: 6.17.1
-  resolution: "@prisma/generator-helper@npm:6.17.1"
-  dependencies:
-    "@prisma/debug": 6.17.1
-    "@prisma/dmmf": 6.17.1
-    "@prisma/generator": 6.17.1
-  checksum: 8c66cbe927af9f9914a7572f251555f24ce29a3adfbd26d99d10bf77340280bbc6500d1d9da8ae5446ba0726a304b6e46d837b15e0d3cb035a2aec5f70657960
-  languageName: node
-  linkType: hard
-
 "@prisma/generator-helper@npm:6.19.2, @prisma/generator-helper@npm:^6.19.0":
   version: 6.19.2
   resolution: "@prisma/generator-helper@npm:6.19.2"
@@ -2143,10 +2132,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/generator@npm:6.17.1":
-  version: 6.17.1
-  resolution: "@prisma/generator@npm:6.17.1"
-  checksum: 6ae1fa487d0890c795caea9e89d5306b40c8558cc3f0cfbae77f79c18d1d3b8129760c7fc891df11490c5d146b75b044a09374e9cdb71419b03ed071e2818609
+"@prisma/generator-helper@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/generator-helper@npm:7.6.0"
+  dependencies:
+    "@prisma/debug": 7.6.0
+    "@prisma/dmmf": 7.6.0
+    "@prisma/generator": 7.6.0
+  checksum: 67c8117f328aa43584618348cf29acd8dab7d62ec1890618dfbecb0e553c461becd89dfc0b40e63aae1eff2f9a47658ca580a9bfd9a757beabac38f85f4b0b3b
   languageName: node
   linkType: hard
 
@@ -2154,6 +2147,13 @@ __metadata:
   version: 6.19.2
   resolution: "@prisma/generator@npm:6.19.2"
   checksum: a2c44831563b594f21f63e0291264802b97266465125cb5a9d4f6530735cec96b2ea6c8e4f9f064cad8a0e4b0760a20cd72c8d21d2e48c49a77bbc04d8ee555f
+  languageName: node
+  linkType: hard
+
+"@prisma/generator@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@prisma/generator@npm:7.6.0"
+  checksum: 4bf489ca23dac08c17eb93842944c30424c47626915970a0893562caa4d167d5f5f6214c5d2eada2abef449cc22245705a9ab599065f1e406bd66adcb663fc70
   languageName: node
   linkType: hard
 
@@ -8035,7 +8035,7 @@ __metadata:
   resolution: "prisma-generator-hono@workspace:packages/generator"
   dependencies:
     "@prisma/client": 6.17.1
-    "@prisma/generator-helper": 6.17.1
+    "@prisma/generator-helper": 7.6.0
     "@prisma/internals": ^6.17.1
     "@types/better-sqlite3": ^7.6.13
     "@types/node": 24.7.2
