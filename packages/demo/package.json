@@ -17,7 +17,6 @@
     "@vitest/coverage-v8": "^4.0.14",
     "husky": "9.1.7",
     "prisma-mock": "^1.0.2",
-    "prisma-mock-vitest": "^0.1.6",
     "typescript": "^5.9.3",
     "vitepress": "^1.6.4",
     "vitest": "^4.0.14",
