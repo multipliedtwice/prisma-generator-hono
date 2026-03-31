@@ -15,7 +15,8 @@
     "start": "node dist/bin.js",
     "test": "vitest",
     "coverage": "vitest --coverage",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepublishOnly": "node copy.js"
   },
   "dependencies": {
     "@prisma/generator-helper": "6.17.1",
