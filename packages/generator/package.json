@@ -19,7 +19,7 @@
     "prepublishOnly": "node copy.js"
   },
   "dependencies": {
-    "@prisma/generator-helper": "6.17.1",
+    "@prisma/generator-helper": "7.6.0",
     "prettier": "3.6.2"
   },
   "peerDependencies": {
