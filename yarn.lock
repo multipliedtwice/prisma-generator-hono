@@ -613,20 +613,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:20.1.0":
-  version: 20.1.0
-  resolution: "@commitlint/cli@npm:20.1.0"
+"@commitlint/cli@npm:20.5.0":
+  version: 20.5.0
+  resolution: "@commitlint/cli@npm:20.5.0"
   dependencies:
-    "@commitlint/format": ^20.0.0
-    "@commitlint/lint": ^20.0.0
-    "@commitlint/load": ^20.1.0
-    "@commitlint/read": ^20.0.0
-    "@commitlint/types": ^20.0.0
+    "@commitlint/format": ^20.5.0
+    "@commitlint/lint": ^20.5.0
+    "@commitlint/load": ^20.5.0
+    "@commitlint/read": ^20.5.0
+    "@commitlint/types": ^20.5.0
     tinyexec: ^1.0.0
     yargs: ^17.0.0
   bin:
     commitlint: ./cli.js
-  checksum: 8273860d2841dcc628bdafa3cb72bcb8f526d0a357ebdff3545e488c57a5e9f242943a2a39e89afa294595c86ee71dc7bf01b5936e80362eef84ce213d4ff2c9
+  checksum: 05971a74ce382c1bb3fc4a07147ba9b1f47710776827ddfa1446d3edcb269f859b71adcd1eebc7f2ce608c9067c04eed12cd341fdecb313439b545c64a7d5f2c
   languageName: node
   linkType: hard
 
@@ -671,7 +671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/format@npm:^20.0.0":
+"@commitlint/format@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/format@npm:20.5.0"
   dependencies:
@@ -691,7 +691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/lint@npm:^20.0.0":
+"@commitlint/lint@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/lint@npm:20.5.0"
   dependencies:
@@ -703,7 +703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^20.1.0":
+"@commitlint/load@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/load@npm:20.5.0"
   dependencies:
@@ -738,7 +738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/read@npm:^20.0.0":
+"@commitlint/read@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/read@npm:20.5.0"
   dependencies:
@@ -4465,7 +4465,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "demo@workspace:packages/demo"
   dependencies:
-    "@commitlint/cli": 20.1.0
+    "@commitlint/cli": 20.5.0
     "@commitlint/config-conventional": 20.0.0
     "@dee-wan/schema-parser": ^1.4.0
     "@hono/node-server": ^1.19.11
@@ -8632,7 +8632,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@commitlint/cli": 20.1.0
+    "@commitlint/cli": 20.5.0
     "@commitlint/config-conventional": 20.0.0
     "@semantic-release/changelog": ^6.0.3
     "@semantic-release/git": ^10.0.1

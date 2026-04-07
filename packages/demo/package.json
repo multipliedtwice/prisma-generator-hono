@@ -5,7 +5,7 @@
   ],
   "name": "demo",
   "devDependencies": {
-    "@commitlint/cli": "20.1.0",
+    "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.0.0",
     "@dee-wan/schema-parser": "^1.4.0",
     "@semantic-release/changelog": "^6.0.3",
